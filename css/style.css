@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #eee;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    background: #eee;
+    box-shadow: 4px 10px 10px #999;
+    padding: 1em;
+}
+
+.logo{
+  margin-left: 3em;
+}
+.navbar{
+  margin-right: 5em;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 1em;
+    transition: 1s ease-in-out;
+}
+.navbar ul li a:hover{
+  color: #052659;
+  text-decoration: underline;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #222;
+    transition: .5s ease-in-out;
+}
+.navbar ul li .active{
+    text-decoration: underline;
+    color: #052659;
+}
+.second ul{
+  display: none;
+}
+  
+  
+  
+
+
+
+
+
+
+
+
+.top-message{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12em 8em 2em 8em;
+}
+
+.top-message-left{
+    font-size: 35px;
+}
+.top-message-left .long{
+    margin-top: .2em;
+    margin-bottom: .2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.top-message-right img{
+  max-width: 20em;
+  border-radius: 15em;
+  box-shadow: 0 0 20px #333;
+  
+}
+#whatsappButton{
+    background: #052659;
+    color: #eee;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 1em;
+    text-decoration: none;
+    box-shadow: 0px 5px 10px #555;
+    transition: 1s ease-in-out;
+}
+#whatsappButton:hover{
+  color: #eee;
+  background: #36ab11;
+  border: 1px solid #eee;
+}
+
+
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10em;
+    font-size: 20px;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3em 15em 0 15em;
+}
+.box1,
+.box2{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 2em 0 2em;
+    padding: 3em;
+    border: 1px solid #777;
+    box-shadow: 0px 7px 10px #555;
+    border-radius: 1em;
+}
+.box1 h3,
+.box2 h3,
+.box1 p,
+.box2 p{
+    max-width:10em ;
+    margin-top: 1em;
+}
+
+/** heading colors**/
+.services h2,
+.services h3,
+.testimony h2,
+.testimony h3,
+.about-content h2{
+  color: #052659;
+}
+
+
+
+
+
+.hire-us{
+    margin-top: 8em;
+    background: #021024;
+    color: #eee;
+    padding:5em;
+}
+.hire-us-info{
+    margin: 2em 5em 2em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hire-us-info img{
+  max-width: 15em;
+  padding: 1em;
+  border: 2px solid #eee;
+  border-radius: 10em;
+}
+.hire-us-right p,
+.hire-us-right h3{
+    margin-top: .5em;
+}
+.hire-us-right p{
+  max-width: 15em;
+}
+.list ul{
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.getStarted{
+    background: #eee;
+    color: #222;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 1em;
+    text-decoration: none;
+    margin-top: 2em;
+    transition: .5s ease-in-out;
+}
+.getStarted:hover{
+  border: 1px solid#eee;
+  background: #021024;
+  color: #eee;
+}
+
+
+.about-content{
+  margin:8em 10em 5em 10em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-content-text{
+  max-width: 25em;
+}
+.about-content-text p{
+  margin-top: .5em;
+}
+.about-content img{
+  max-width: 15em;
+  padding: 1em;
+  border: 2px solid #222;
+  border-radius: 10em;
+  box-shadow: 2px 5px 5px #555;
+}
+
+
+.testimony{
+  margin:10em 0 5em 0;
+}
+.headText{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.quotes{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top:1em;
+}
+.q1,
+.q2,
+.q3{
+  box-shadow: 0 4px 10px #555;
+  padding: 3em;
+  border-radius: 1em;
+  max-width: 5em;
+  max-height: 3em;
+}
+.q1 h3,
+.q2 h3,
+.q3 h3{
+  margin-top: -.5em;
+}
+
+
+.rec-message{
+  background: #052659;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em 15em 2em 15em;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  box-shadow: 0px 7px 10px #555;
+}
+.rec-message a{
+  background: #eee;
+  color: #052659;
+  padding:.5em;
+  text-decoration: none;
+  border-radius: .5em;
+  transition: .5s ease-in-out;
+}
+.rec-message a:hover{
+  border: 1px solid #eee;
+  color: #eee;
+  background: #052659;
+}
+
+
+footer{
+  color: #eee;
+  background: #021024;
+  height: 20em;
+}
+footer a{
+  color: #eee;
+  text-decoration: none;
+}
+.more-info{
+  margin: 0 10em 0 10em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.f1,
+.f2,
+.f3{
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  flex-flow: column;
+  margin-top: 8em;
+}
+.foot-container p{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+.copyright{
+  margin-top: 5em;
+}
+
+
+/** extra styling**/
+#bars{
+  display: none;
+}
+#laptop,
+#android{
+  font-size: 25px;
+}
+#android{
+  color: #36ab11;
+}
+
+
+
+
+
+
+/** mobile phone reponsiveness style**/
+@media (max-width:750px) {
+  header{
+    padding: 1em;
+  }
+  .navbar ul{
+    display:none;
+  }
+  #bars{
+    display:contents;
+  }
+  .logo{
+    margin-left: .5em;
+  }
+  .navbar{
+    margin-right: 2em;
+  }
+  .navbar ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar ul li{
+    margin: 10px 0;
+  }
+
+
+.second ul{
+  margin-top: 3.5em;
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  background: #aaa;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 92%;
+}
+.second ul li{
+  list-style: none;
+}
+.second ul li a{
+  text-decoration: none;
+  color: #222;
+}
+.second ul li a:hover{
+  text-decoration: underline;
+}
+
+
+  .top-message{
+    font-size: 8px;
+    margin: 16em 3em 2em 3em;
+  }
+  #whatsappButton{
+    font-size: 12px;
+  }
+  .intro{
+    font-size: 13px;
+  }
+  .services{
+    font-size:15px;
+  }
+  .boxes{
+    flex-direction: column;
+    margin: 2em 2em 0 2em;
+    max-width: 17em;
+  }
+  .box1,
+  .box2{
+    margin:1em .5em 2em .5em;
+  }
+
+
+
+
+  .hire-us{
+    padding:1em;
+  }
+  .hire-us-info{
+    margin: 3em 2em 2em 2em;
+    flex-direction: column;
+  }
+  .hire-us-right{
+    margin-top: 2em;
+  }
+  .hire-us-right p{
+    max-width: none;
+  }
+
+
+
+  .about-content img,
+  .hire-us-info img{
+    max-width: 12em;
+  }
+  .about-content{
+    margin:7em 2em 1em 3em;
+    flex-direction: column;
+  }
+  .about-content img{
+    margin-top: 3em;
+  }
+
+
+  .testimony{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .quotes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 15em;
+    margin: 2em 3em 2em 3em;
+  }
+  .q1, .q2, .q3{
+    margin-bottom: 1em;
+  }
+
+
+  .rec-message{
+    margin: 2em 1em 2em 1em;
+    padding: .5em;
+    border-radius: .5em;
+  }
+  .rec-message a{
+    font-size: 15px;
+  }
+
+
+
+  footer{
+    font-size: 12px;
+  }
+  .more-info{
+    margin: 0 1em 0 1em;
+  }
+}
